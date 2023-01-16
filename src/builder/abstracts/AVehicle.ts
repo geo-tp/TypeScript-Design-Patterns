@@ -3,7 +3,6 @@ export abstract class Vehicle {
   private name: string;
   private brand: string;
   private birthdate: string;
-  private power: number;
 
   set setId(id: number) {
     this.id = id;
@@ -21,10 +20,6 @@ export abstract class Vehicle {
     this.birthdate = date;
   }
 
-  set setPower(power: number) {
-    this.power = power;
-  }
-
   get getId() {
     return this.id;
   }
@@ -39,9 +34,5 @@ export abstract class Vehicle {
 
   get getBirthdate() {
     return this.birthdate;
-  }
-
-  get getPower() {
-    return this.power;
   }
 }

@@ -8,8 +8,6 @@ export class Mailer implements Observable {
   }
 
   addToWishList(productName: string): void {
-    console.log(
-      "Send email to for product " + productName + "at " + this.email
-    );
+    console.log("Send email for product " + productName + "to " + this.email);
   }
 }

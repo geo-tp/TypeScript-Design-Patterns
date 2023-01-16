@@ -1,6 +1,6 @@
 # Typescript Design Patterns
 
-Typescript small examples for some design patterns
+Example of using design patterns in simple use cases.
 
 - Creational
 

@@ -1,7 +1,7 @@
 import { Observable } from "./Observable";
 
 export class WishList implements Observable {
-  productsList: Array<string>;
+  productsList: string[];
 
   addToWishList(productName: string): void {
     this.productsList.push(productName);

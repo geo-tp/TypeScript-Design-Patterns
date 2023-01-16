@@ -1,4 +1,5 @@
 import { Movie } from "./../adapter/Movie";
+
 export abstract class MovieSearch {
   movies: Movie[];
 

@@ -16,6 +16,7 @@ export class AppViewables implements Viewable {
       view.promptforId();
     }
   }
+
   showPlayer(): void {
     for (let view of this.views) {
       view.showPlayer();

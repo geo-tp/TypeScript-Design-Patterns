@@ -1,23 +1,23 @@
 import { IPedal } from "./interfaces/IPedal";
 
-export class FordPedal implements IPedal {
+export class FordGasPedal implements IPedal {
   private pressure: number;
   private max: number;
 
   constructor() {
     this.pressure = 0;
-    this.max = 12;
+    this.max = 16;
   }
 
-  pressed(pressure: number) {
+  private pressed(pressure: number) {
     this.pressure = Math.min(pressure, this.max);
   }
 
-  released() {
+  private released() {
     this.pressure = 0;
   }
 
-  getCurrentValue(): number {
+  getCurrentPressure(): number {
     return this.pressure;
   }
 }

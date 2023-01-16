@@ -1,7 +1,9 @@
 import { GeoApi } from "./GeoApi";
 export class GeoApiProxy {
   api: GeoApi;
-  cachedDataset: { [key: string]: object };
+  cachedDataset: {
+    [key: string]: { latitude: number; longitude: number; name: string };
+  };
 
   constructor(api: GeoApi) {
     this.api = api;

@@ -1,7 +1,7 @@
 import { Observable } from "./Observable";
 
 export class Publisher {
-  subscribers: Array<Observable>;
+  subscribers: Observable[];
 
   subscribe(subscriver: Observable) {
     this.subscribers.push(subscriver);

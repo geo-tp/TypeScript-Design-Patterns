@@ -1,4 +1,3 @@
-import { IBrake } from "./interfaces/IBrake";
 import { IWheel } from "./interfaces/IWheel";
 import { IPedal } from "./interfaces/IPedal";
 import { IMotor } from "./interfaces/IMotor";
@@ -8,7 +7,7 @@ export class Car extends Vehicle {
   private motor: IMotor;
   private pedal: IPedal;
   private wheel: IWheel;
-  private brake: IBrake;
+  private brake: IPedal;
 
   setMotor(motor: IMotor) {
     this.motor = motor;
@@ -22,22 +21,15 @@ export class Car extends Vehicle {
     this.wheel = wheel;
   }
 
-  setBrake(brake: IBrake) {
+  setBrake(brake: IPedal) {
     this.brake = brake;
   }
 
-  setInformation(
-    id: number,
-    name: string,
-    model: string,
-    birthdate: string,
-    power: number
-  ) {
+  setInformation(id: number, name: string, model: string, birthdate: string) {
     this.setId = id;
     this.setName = name;
     this.setBrand = model;
     this.setBirthdate = birthdate;
-    this.setPower = power;
   }
 
   start(): boolean {

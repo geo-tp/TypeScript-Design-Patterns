@@ -1,7 +1,7 @@
 import { FordWheel } from "./FordWheel";
 import { FordMotor } from "./FordMotor";
-import { FordBrake } from "./FordBrake";
-import { FordPedal } from "./FordPedal";
+import { FordBrakePedal } from "./FordBrakePedal";
+import { FordGasPedal } from "./FordGasPedal";
 import { CarBuilder } from "./CarBuilder";
 export class CarBuilderDirector {
   private builder: CarBuilder;
@@ -11,21 +11,20 @@ export class CarBuilderDirector {
   }
 
   constructFordFiesta() {
-    const id = 1324;
+    const id = 1234;
     const name = "Fiesta";
     const brand = "Ford";
-    const birthdate = "1/1/2000";
-    const power = 70;
+    const birthdate = "01/01/2000";
 
-    const pedal = new FordPedal();
-    const brake = new FordBrake();
+    const gasPedal = new FordGasPedal();
+    const brakePedal = new FordBrakePedal();
     const motor = new FordMotor();
     const wheel = new FordWheel();
 
     this.builder.reset();
-    this.builder.setCarBrandInformations(id, name, brand, birthdate, power);
-    this.builder.setCarPedal(pedal);
-    this.builder.setCarBrake(brake);
+    this.builder.setCarBrandInformations(id, name, brand, birthdate);
+    this.builder.setCarGasPedal(gasPedal);
+    this.builder.setCarBrakePedal(brakePedal);
     this.builder.setCarMotor(motor);
     this.builder.setCarWheel(wheel);
   }

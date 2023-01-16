@@ -21,6 +21,7 @@ export class User {
     this.firstname = firstname;
     this.lastname = lastname;
     this.address = address;
+
     User.exists = true;
     User.instance = this;
   }

@@ -13,6 +13,7 @@ Typescript small examples for some design patterns
   - Adapter
   - Decorator
   - Proxy
+  - Composite
 
 - Behavioural
 

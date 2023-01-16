@@ -1,6 +1,6 @@
-import { IPedal } from "./interfaces/IPedal";
+import { IPedal } from "../interfaces/IPedal";
 
-export class FordGasPedal implements IPedal {
+export class FordBrakePedal implements IPedal {
   private pressure: number;
   private max: number;
 

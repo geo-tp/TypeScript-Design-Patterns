@@ -1,4 +1,4 @@
-import { IMotor } from "./interfaces/IMotor";
+import { IMotor } from "../interfaces/IMotor";
 
 export class FordMotor implements IMotor {
   private isRunning: boolean = false;

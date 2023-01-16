@@ -1,4 +1,4 @@
-import { IWheel } from "./interfaces/IWheel";
+import { IWheel } from "../interfaces/IWheel";
 
 export class FordWheel implements IWheel {
   private xAxis: number = 0;

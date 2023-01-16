@@ -1,7 +1,7 @@
-import { FordWheel } from "./FordWheel";
-import { FordMotor } from "./FordMotor";
-import { FordBrakePedal } from "./FordBrakePedal";
-import { FordGasPedal } from "./FordGasPedal";
+import { FordWheel } from "./elements//FordWheel";
+import { FordMotor } from "./elements//FordMotor";
+import { FordBrakePedal } from "./elements/FordBrakePedal";
+import { FordGasPedal } from "./elements//FordGasPedal";
 import { CarBuilder } from "./CarBuilder";
 export class CarBuilderDirector {
   private builder: CarBuilder;

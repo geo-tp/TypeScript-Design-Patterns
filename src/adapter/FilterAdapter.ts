@@ -5,7 +5,8 @@ export class FilterAdaptater {
   actor: string;
 
   constructor(movies: Movie[], actor: string) {
-    (this.movies = movies), (this.actor = actor);
+    this.movies = movies;
+    this.actor = actor;
   }
 
   filterByActor() {
